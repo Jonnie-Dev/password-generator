@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Password Generator</title>
+    </head>
+
+    <body>
+        <div class="card">
+            <div class="part">
+                <h1 class="h1">Generate a <span class="h1a"> random password </span></h1>
+                <p class="tag">Never use an insecure password again.</p>
+                
+                <label for="password-len">Enter password length:</label> 
+                <input name="password-len" maxlength="2" id="password-len" class="password-len" type="text" placeholder="16" >
+                <button id="generate" class="generate">Generate passwords</button>                
+            </div>
+            <div class="field">
+                <p id="field-1" class="password field-1"></p>
+                <p id="field-2" class="password field-2"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

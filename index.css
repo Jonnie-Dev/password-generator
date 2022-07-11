@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: #D5D4D8;
+    background: #1C1C1C;
+}
+
+.card {
+    background: #1F2937;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 4rem 3.25rem;
+}
+
+.h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+.h1a {
+    color: #4ADF86;
+}
+
+.tag {
+    margin-top: 1.2rem;
+    color: #D5D4D8;
+}
+
+.generate {
+    display: block;
+    margin: 2.5rem 0  3rem 0;
+    background-color: #10B981;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.part {
+    border-bottom: 1px #2F3E53 solid;
+}
+
+.password {
+    margin-top: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    background: #273549;
+    padding: 1rem 1.4rem;
+    border-radius: 5px; 
+    color: #55F991;
+    cursor: pointer;
+    /*width: 7.5rem;*/
+    /*border: 2px solid white; */  
+}
+
+.password-len {
+    margin-top: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+    border: 0;
+    padding: 0.4rem 0.2rem;
+    background-color: #10B981;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.password-len::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.password-len:active, 
+.password-len:focus,
+.generate:active,
+.generate:focus  {
+    outline: 2px #064E3B solid;
+}
+
+.password:not(:last-child) {
+    margin-right: 0.8rem;
+}
