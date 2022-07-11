@@ -1,4 +1,4 @@
-# Password Generator
+# Password Generator (Solo Project)
 
 ## About Scrimba
 
