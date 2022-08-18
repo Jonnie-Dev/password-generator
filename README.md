@@ -1,5 +1,12 @@
 # Password Generator (Solo Project)
 
+Password Generator to generate specified Password length, if not specified then it uses the default length which is 16.
+Generated passwords are of high strength with the combination of Uppercase and Lowercase alphabets, Numbers also special characters making your passwords super secure for use anywhere.
+
+This is a Solo Project in the Frontend Career Path by Scrimba
+
+
+
 ## About Scrimba
 
 At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
