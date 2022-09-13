@@ -20,16 +20,52 @@ generateBtn.addEventListener('click', function() {
   for(let i = 0; i <= passwordLength-1; i++) {
     var random = Math.floor(Math.random() * characters.length)
     random1 += characters[random]
-    field1.textContent = random1      
-  }       
-  for(let i = 0; i <= passwordLength - 1; i++) {
+    field1.textContent = random1    
+
     var random = Math.floor(Math.random() * characters.length)
     random2 += characters[random]
     field2.textContent = random2
-  }      
+  }       
+
   random1 = ""
   random2 = ""
 })
 
+field1.addEventListener('click', copyTextToClipboard1)
+field2.addEventListener('click', copyTextToClipboard2)
 
+function copyTextToClipboard1(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = field1.textContent;
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+}
+function copyTextToClipboard2(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = field2.textContent;
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Copying text command was ' + msg);
+  } catch (err) {
+    console.log('Oops, unable to copy');
+  }
+
+  document.body.removeChild(textArea);
+}
 
